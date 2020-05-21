@@ -1,0 +1,50 @@
+<p id=test></p>
+<hr>
+<p id=test1></p>
+<hr>
+
+<form action="/action_page.php">
+  <select id="device">
+  </select>
+  
+  <br><br>
+  
+  <select id="software">
+  </select>
+  
+  <br><br>
+  <input type="submit">
+</form>
+
+<script>
+
+y = {"DX": ["s52040ce9_7_2-3f94b3cda3f.pkg"], "Spark_Series": ["cmterm-s53200ce9_7_2-3f94b3cda3f.k3.cop.sgn", "cmterm-s53200ce9_7_1-30bff6140aa.k3.cop.sgn", "cmterm-s53200ce9_5_1-be5deaf82e6.k3.cop.sgn"]};
+
+var optionHTML = '';
+
+for (var x in y){
+    optionHTML += '<option value="' + x + '">' + x + '</option>';
+    }
+    
+var dev = document.getElementById('device');
+
+dev.innerHTML = optionHTML;
+
+var soft = document.getElementById('software');
+var dev_value =  dev.value;
+
+
+a = document.getElementById("test1");
+
+dev.onchange = function() {
+    var dev_value =  dev.value;
+      document.getElementById("test").innerHTML = dev.value;
+      var optionsecHTML = '';
+      for(var i=0; i<y[dev_value].length;i++){
+      optionsecHTML += '<option value="' + y[dev_value][i] + '">' + y[dev_value][i] + '</option>';
+    soft.innerHTML = optionsecHTML;
+      }
+  }
+  
+var b = ["DX","Spark_Series"];
+</script>
