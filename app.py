@@ -14,8 +14,8 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 import json
 import paramiko, time ,re
 import smtplib
-from flask_mail import Mail,  Message
-
+import Mail,  Message
+ 
 
 
 
