@@ -995,3 +995,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100% !important;
   height: 100% !important;
 }
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+  }
