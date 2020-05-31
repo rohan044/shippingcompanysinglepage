@@ -66,7 +66,7 @@ def sendmail():
         msg = mail.send_message(
         'You have received an email from ascshipping.co.in',
         sender=email,
-        recipients=['mail2sunit.om@gmail.com'],
+        recipients=['mail2sunit.om@gmail.com','customercare@ascshipping.co.in'],
         body='You have received a quote request from email:'+" "+email+" "+"Phone number:"+phone+" "+"with message:"+message
         )
 
@@ -74,7 +74,7 @@ def sendmail():
         'Thanks for contacting ascshipping.co.in!',
         sender=email,
         recipients=[email],
-        body='Thank you '+" "+name+" "+'for sending us your query. We will get back to you with the quotation soon! In case of urgency you can directly call on +91 6290347722'
+        body='Hi '+""+name+","+'\n\nThank you for sending us your query.\n\nWe will get back to you with the quotation soon! In case of urgency you can directly call us on +91 6290347722. \n\nWarm regards,\nASC Customer Success'
         )
 
         
