@@ -607,7 +607,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 50px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 200px;
+  height: 300px;
   position: relative;
   background: #fafafa;
 }
@@ -833,9 +833,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member span {
-  font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 #team .member .social {
@@ -999,4 +998,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 .col-centered{
   float: none;
   margin: 0 auto;
+  }
+
+  .teamfont {
+    font-style: italic;
+    display: block;
+    font-size: 16px;
   }
